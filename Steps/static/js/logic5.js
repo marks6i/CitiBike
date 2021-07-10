@@ -59,8 +59,6 @@ d3.json("https://gbfs.citibikenyc.com/gbfs/en/station_information.json").then(fu
     // Initialize a stationStatusCode, which will be used as a key to access the appropriate layers, icons, and station count for layer group
     var stationStatusCode;
 
-    var bikeMarkers = [];
-
     // Initialize all of the LayerGroups we'll be using
     var layers = {
       COMING_SOON: new L.LayerGroup(),
