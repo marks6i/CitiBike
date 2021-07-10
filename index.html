@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>CitiBike Examples</title>
+        <style type="text/css">
+            body, html
+            {
+                margin: 0; padding: 0; height: 100%; overflow: hidden;
+            }
+
+            #content
+            {
+                position:absolute; left: 0; right: 0; bottom: 0; top: 20px; 
+            }
+        </style>
+    </head>
+  <body>
+    <form name="change">
+      <select name="options" onchange="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
+        <option value="./Unsolved/citibike1.html">Citibike 1 - Just add markers, no layers</option>
+        <option value="./Unsolved/citibike2.html">Citibike 2 - Create marker layer and create control for base / overlays</option>
+        <option value="./Solved/Basic/index.html">Basic</option>
+        <option value="./Unsolved/citibike3.html">Citibike 3 - Customize markers</option>
+        <option value="./Unsolved/citibike4.html">Citibike 4 - Separate markers for stations with different statuses</option>
+        <option value="./Unsolved/citibike5.html">Citibike 5 - Break markers with different statuses into different layers</option>
+        <option value="./Unsolved/citibike6.html">Citibike 6 - Add a legend</option>
+        <option value="./Solved/Advanced/index.html">Advanced</option>
+      </select>
+    </form>
+
+    <div id="content">
+      <iframe name="iframe" id="youriframe" width="100%" height="100%" frameborder="0" src="./Unsolved/citibike1.html"></iframe>
+    </div>
+
+  </body>
+</html>
